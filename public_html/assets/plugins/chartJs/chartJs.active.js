@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict"; // Start of use strict
 
     var chart_labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -10,59 +10,59 @@ $(document).ready(function () {
         data: {
             labels: chart_labels,
             datasets: [{
-                    type: 'line',
-                    label: "Salles",
-                    borderColor: "rgb(55, 160, 0)",
-                    fill: false,
-                    data: temp_dataset
-                }, {
-                    type: 'bar',
-                    label: "Affiliate",
-                    backgroundColor: "rgba(55, 160, 0, .1)",
-                    borderColor: "rgba(55, 160, 0, .4)",
-                    data: rain_dataset
-                }]
+                type: 'line',
+                label: "Salles",
+                borderColor: "rgb(55, 160, 0)",
+                fill: false,
+                data: temp_dataset
+            }, {
+                type: 'bar',
+                label: "Affiliate",
+                backgroundColor: "rgba(55, 160, 0, .1)",
+                borderColor: "rgba(55, 160, 0, .4)",
+                data: rain_dataset
+            }]
         },
         options: {
             legend: false,
             scales: {
                 yAxes: [{
-                        gridLines: {
-                            color: "#e6e6e6",
-                            zeroLineColor: "#e6e6e6",
-                            borderDash: [2],
-                            borderDashOffset: [2],
-                            drawBorder: false,
-                            drawTicks: false
-                        },
-                        ticks: {
-                            padding: 20
-                        }
-                    }],
+                    gridLines: {
+                        color: "#e6e6e6",
+                        zeroLineColor: "#e6e6e6",
+                        borderDash: [2],
+                        borderDashOffset: [2],
+                        drawBorder: false,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        padding: 20
+                    }
+                }],
 
                 xAxes: [{
-                        maxBarThickness: 50,
-                        gridLines: {
-                            lineWidth: [0]
-                        },
-                        ticks: {
-                            padding: 20,
-                            fontSize: 14,
-                            fontFamily: "'Nunito Sans', sans-serif"
-                        }
-                    }]
+                    maxBarThickness: 50,
+                    gridLines: {
+                        lineWidth: [0]
+                    },
+                    ticks: {
+                        padding: 20,
+                        fontSize: 14,
+                        fontFamily: "'Nunito Sans', sans-serif"
+                    }
+                }]
             }
         }
     };
     var forecast_chart = new Chart(ctx, config);
-    $("#0").on("click", function () {
+    $("#0").on("click", function() {
         var data = forecast_chart.config.data;
         data.datasets[0].data = temp_dataset;
         data.datasets[1].data = rain_dataset;
         data.labels = chart_labels;
         forecast_chart.update();
     });
-    $("#1").on("click", function () {
+    $("#1").on("click", function() {
         var chart_labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         var temp_dataset = [0, 15, 5, 30, 10, 20, 10, 15, 10, 30, 25, 10];
         var rain_dataset = [20, 25, 30, 35, 27, 23, 18, 26, 28, 26, 20, 32];
@@ -72,7 +72,7 @@ $(document).ready(function () {
         data.labels = chart_labels;
         forecast_chart.update();
     });
-    $("#2").on("click", function () {
+    $("#2").on("click", function() {
         var chart_labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         var temp_dataset = [0, 10, 5, 15, 10, 20, 15, 25, 20, 30, 25, 40];
         var rain_dataset = [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32];
@@ -94,12 +94,12 @@ $(document).ready(function () {
         grey: 'rgb(231,233,237)'
     };
 
-    var randomScalingFactor = function () {
+    var randomScalingFactor = function() {
         return (Math.random() > 0.5 ? 1.0 : 1.0) * Math.round(Math.random() * 100);
     };
 
     // draws a rectangle with a rounded top
-    Chart.helpers.drawRoundedTopRectangle = function (ctx, x, y, width, height, radius) {
+    Chart.helpers.drawRoundedTopRectangle = function(ctx, x, y, width, height, radius) {
         ctx.beginPath();
         ctx.moveTo(x + radius, y);
         // top right corner
@@ -116,7 +116,7 @@ $(document).ready(function () {
     };
 
     Chart.elements.RoundedTopRectangle = Chart.elements.Rectangle.extend({
-        draw: function () {
+        draw: function() {
             var ctx = this._chart.ctx;
             var vm = this._view;
             var left, right, top, bottom, signX, signY, borderSkipped;
@@ -208,14 +208,14 @@ $(document).ready(function () {
         data: {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             datasets: [{
-                    label: 'Students',
-                    backgroundColor: chartColors.green,
-                    data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32]
-                }, {
-                    label: 'Teachers',
-                    backgroundColor: chartColors.gray,
-                    data: [15, 10, 20, 12, 6, 7, 10, 15, 15, 20, 15, 20]
-                }]
+                label: 'Students',
+                backgroundColor: chartColors.green,
+                data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32]
+            }, {
+                label: 'Teachers',
+                backgroundColor: chartColors.gray,
+                data: [15, 10, 20, 12, 6, 7, 10, 15, 15, 20, 15, 20]
+            }]
         },
         options: {
             legend: false,
@@ -223,29 +223,29 @@ $(document).ready(function () {
             barRoundness: 1,
             scales: {
                 yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            padding: 10
-                        },
-                        gridLines: {
-                            borderDash: [2],
-                            borderDashOffset: [2],
-                            drawBorder: false,
-                            drawTicks: false
-                        }
-                    }],
+                    ticks: {
+                        beginAtZero: true,
+                        padding: 10
+                    },
+                    gridLines: {
+                        borderDash: [2],
+                        borderDashOffset: [2],
+                        drawBorder: false,
+                        drawTicks: false
+                    }
+                }],
                 xAxes: [{
-                        maxBarThickness: 10,
-                        gridLines: {
-                            lineWidth: [0],
-                            drawBorder: false,
-                            drawOnChartArea: false,
-                            drawTicks: false
-                        },
-                        ticks: {
-                            padding: 20
-                        }
-                    }]
+                    maxBarThickness: 10,
+                    gridLines: {
+                        lineWidth: [0],
+                        drawBorder: false,
+                        drawOnChartArea: false,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        padding: 20
+                    }
+                }]
             }
         }
     });
@@ -255,9 +255,11 @@ $(document).ready(function () {
     var myChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: [["Eating", "Dinner"], ["Drinking", "Water"], "Sleeping", ["Designing", "Graphics"], "Coding", "Cycling", "Running"],
-            datasets: [
-                {
+            labels: [
+                ["Eating", "Dinner"],
+                ["Drinking", "Water"], "Sleeping", ["Designing", "Graphics"], "Coding", "Cycling", "Running"
+            ],
+            datasets: [{
                     label: "My First dataset",
                     data: [65, 59, 66, 45, 56, 55, 40],
                     borderColor: "rgba(55, 160, 0, 0.7)",
@@ -289,8 +291,7 @@ $(document).ready(function () {
         type: 'line',
         data: {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
+            datasets: [{
                     label: "My First dataset",
                     borderColor: "rgba(0,0,0,.2)",
                     borderWidth: "2",
@@ -311,29 +312,29 @@ $(document).ready(function () {
             legend: false,
             scales: {
                 yAxes: [{
-                        gridLines: {
-                            color: "#e6e6e6",
-                            zeroLineColor: "#e6e6e6",
-                            borderDash: [2],
-                            borderDashOffset: [2],
-                            drawBorder: false,
-                            drawTicks: false
-                        },
-                        ticks: {
-                            padding: 20
-                        }
-                    }],
+                    gridLines: {
+                        color: "#e6e6e6",
+                        zeroLineColor: "#e6e6e6",
+                        borderDash: [2],
+                        borderDashOffset: [2],
+                        drawBorder: false,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        padding: 20
+                    }
+                }],
                 xAxes: [{
-                        maxBarThickness: 50,
-                        gridLines: {
-                            lineWidth: [0]
-                        },
-                        ticks: {
-                            padding: 20,
-                            fontSize: 14,
-                            fontFamily: "'Nunito Sans', sans-serif"
-                        }
-                    }]
+                    maxBarThickness: 50,
+                    gridLines: {
+                        lineWidth: [0]
+                    },
+                    ticks: {
+                        padding: 20,
+                        fontSize: 14,
+                        fontFamily: "'Nunito Sans', sans-serif"
+                    }
+                }]
             }
         }
     });
@@ -344,21 +345,21 @@ $(document).ready(function () {
         type: 'pie',
         data: {
             datasets: [{
-                    data: [45, 25, 20, 10],
-                    backgroundColor: [
-                        "#37a000",
-                        "#43bb04",
-                        "#49cc05",
-                        "rgba(0, 0, 0, 0.07)"
-                    ],
-                    hoverBackgroundColor: [
-                        "#37a000",
-                        "#43bb04",
-                        "#49cc05",
-                        "rgba(0, 0, 0, 0.07)"
-                    ]
+                data: [45, 25, 20, 10],
+                backgroundColor: [
+                    "#37a000",
+                    "#43bb04",
+                    "#49cc05",
+                    "rgba(0, 0, 0, 0.07)"
+                ],
+                hoverBackgroundColor: [
+                    "#37a000",
+                    "#43bb04",
+                    "#49cc05",
+                    "rgba(0, 0, 0, 0.07)"
+                ]
 
-                }],
+            }],
             labels: [
                 "green",
                 "green",
@@ -377,18 +378,18 @@ $(document).ready(function () {
         type: 'doughnut',
         data: {
             datasets: [{
-                    data: [40, 25, 20],
-                    backgroundColor: [
-                        "#37a000",
-                        "#42b704",
-                        "#e4e4e4"
-                    ],
-                    hoverBackgroundColor: [
-                        "#4cd604",
-                        "#4cd604",
-                        "#4cd604"
-                    ]
-                }],
+                data: [40, 25, 20],
+                backgroundColor: [
+                    "#37a000",
+                    "#42b704",
+                    "#e4e4e4"
+                ],
+                hoverBackgroundColor: [
+                    "#4cd604",
+                    "#4cd604",
+                    "#4cd604"
+                ]
+            }],
             labels: [
                 "green",
                 "green",
@@ -409,15 +410,15 @@ $(document).ready(function () {
         type: 'polarArea',
         data: {
             datasets: [{
-                    data: [15, 18, 9, 6, 19],
-                    backgroundColor: [
-                        "#37a000",
-                        "#43bb04",
-                        "#49cc05",
-                        "rgba(0,0,0,0.2)",
-                        "#2e8203"
-                    ]
-                }],
+                data: [15, 18, 9, 6, 19],
+                backgroundColor: [
+                    "#37a000",
+                    "#43bb04",
+                    "#49cc05",
+                    "rgba(0,0,0,0.2)",
+                    "#2e8203"
+                ]
+            }],
             labels: [
                 "green",
                 "green",
@@ -437,13 +438,11 @@ $(document).ready(function () {
         type: 'bar',
         data: {
             labels: ["Sun", "Mon", "Tu", "Wed", "Th", "Fri", "Sat"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    data: [40, 55, 75, 81, 56, 55, 40],
-                    backgroundColor: "#37a000"
-                }
-            ]
+            datasets: [{
+                label: "My First dataset",
+                data: [40, 55, 75, 81, 56, 55, 40],
+                backgroundColor: "#37a000"
+            }]
         },
         options: {
             legend: false,
@@ -451,30 +450,30 @@ $(document).ready(function () {
             barRoundness: 1,
             scales: {
                 yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            padding: 10
-                        },
-                        gridLines: {
-                            borderDash: [2],
-                            borderDashOffset: [2],
-                            drawBorder: false,
-                            drawTicks: false
-                        }
-                    }],
+                    ticks: {
+                        beginAtZero: true,
+                        padding: 10
+                    },
+                    gridLines: {
+                        borderDash: [2],
+                        borderDashOffset: [2],
+                        drawBorder: false,
+                        drawTicks: false
+                    }
+                }],
 
                 xAxes: [{
-                        maxBarThickness: 10,
-                        gridLines: {
-                            lineWidth: [0],
-                            drawBorder: false,
-                            drawOnChartArea: false,
-                            drawTicks: false
-                        },
-                        ticks: {
-                            padding: 20
-                        }
-                    }]
+                    maxBarThickness: 10,
+                    gridLines: {
+                        lineWidth: [0],
+                        drawBorder: false,
+                        drawOnChartArea: false,
+                        drawTicks: false
+                    },
+                    ticks: {
+                        padding: 20
+                    }
+                }]
             }
         }
     });

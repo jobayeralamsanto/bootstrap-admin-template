@@ -17,5 +17,14 @@
  * PLEASE DO NOT REMOVE THIS COPYRIGHT NOTICE.
  * @hidden
  */
-am4internal_webpackJsonp(["3047"],{qNDN:function(e,t,c){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s=c("01H4"),a=c("8ZqG"),b=function(e){Object(s.a)(e,"Grid")&&(e.strokeOpacity=.07),Object(s.a)(e,"ColorSet")&&(e.list=[Object(a.c)("#86ce86"),Object(a.c)("#0975da"),Object(a.c)("#0996f2"),Object(a.c)("#1fb0ff"),Object(a.c)("#41baff"),Object(a.c)("#5ec5ff"),Object(a.c)("#3db7ff")],e.reuse=!1,e.stepOptions={lightness:.1,hue:0},e.passOptions={})};window.am4themes_amcharts=b}},["qNDN"]);
+am4internal_webpackJsonp(["3047"], {
+    qNDN: function(e, t, c) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", { value: !0 });
+        var s = c("01H4"),
+            a = c("8ZqG"),
+            b = function(e) { Object(s.a)(e, "Grid") && (e.strokeOpacity = .07), Object(s.a)(e, "ColorSet") && (e.list = [Object(a.c)("#86ce86"), Object(a.c)("#0975da"), Object(a.c)("#0996f2"), Object(a.c)("#1fb0ff"), Object(a.c)("#41baff"), Object(a.c)("#5ec5ff"), Object(a.c)("#3db7ff")], e.reuse = !1, e.stepOptions = { lightness: .1, hue: 0 }, e.passOptions = {}) };
+        window.am4themes_amcharts = b
+    }
+}, ["qNDN"]);
 //# sourceMappingURL=amcharts.js.map
