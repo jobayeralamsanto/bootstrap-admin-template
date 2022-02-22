@@ -21,12 +21,64 @@
     <link href="assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
     <!--Third party Styles(used by this page)-->
 
-    <!--Start Your Custom Style Now-->
     <link href="assets/dist/css/black-gray.css" rel="stylesheet">
+
+    <!--Style Switcher-->
+    <link rel="alternate stylesheet" type="text/css" title="black-gray" href="assets/dist/css/black-gray.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green-teal" href="assets/dist/css/green-teal.css" />
+    <link rel="alternate stylesheet" type="text/css" title="gradient-purple" href="assets/dist/css/gradient-purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red-pink" href="assets/dist/css/red-pink.css" />
+    <link rel="alternate stylesheet" type="text/css" title="indigo-blue" href="assets/dist/css/style-new.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/styleswitcher.css" />
+
     <!--<link href="assets/dist/css/style.rtl.css" rel="stylesheet">-->
 </head>
 
 <body class="fixed sidebar-mini">
+    <!-- Style Switcher Starts -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('black-gray');" title="black-gray" class="black-gray"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green-teal');" title="green-teal" class="green-teal"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('gradient-purple');" title="gradient-purple" class="gradient-purple"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red-pink');" title="red-pink" class="red-pink"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('indigo-blue');" title="indigo-blue" class="indigo-blue"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"></a>
+                </li>
+            </ul>
+
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Style Switcher Ends -->
+
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -538,6 +590,7 @@
 
     <!--Page Scripts(used by all page)-->
     <script src="assets/dist/js/sidebar.js"></script>
+    <script src="assets/dist/js/styleswitcher.js"></script>
 </body>
 
 </html>
