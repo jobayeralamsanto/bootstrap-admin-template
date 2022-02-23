@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
         if (jQuery("#showSwitcher").is(":visible")) {
 
             var _identifier = "#showSwitcher";
-            jQuery("#switcher").animate({ "margin-left": "0px" }, 500).show();
+            jQuery("#switcher").animate({ "margin-left": "0px" }, 50).show();
             createCookie("switcher_visible", 'true', 365);
 
         } else {
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 
         }
 
-        jQuery(_identifier).animate({ "margin-left": "-500px" }, 500, function() {
+        jQuery(_identifier).animate({ "margin-left": "-500px" }, 50, function() {
             jQuery(this).hide();
         });
 

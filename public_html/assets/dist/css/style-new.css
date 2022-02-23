@@ -2200,7 +2200,7 @@ table code {
 }
 
 .sidebar-nav ul li.mm-active .nav-second-level li.mm-active .nav-third-level li.mm-active a {
-    color: #fff;
+    color: #303f9f;
     font-weight: 700
 }
 
@@ -2570,6 +2570,10 @@ table code {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis
+}
+
+.footer-content .credit a {
+    color: #fff;
 }
 
 @media (max-width:768px) {
