@@ -198,6 +198,16 @@
     background: #5d4037;
 }
 
+#switcher a.olive {
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px 4px;
+    width: 25px;
+    height: 25px;
+    background: #7b9137;
+}
+
 #switcher p small {
     font-size: 10px;
 }

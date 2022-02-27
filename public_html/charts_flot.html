@@ -20,13 +20,67 @@
     <link href="assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
     <!--Third party Styles(used by this page)-->
 
-    <!--Start Your Custom Style Now-->
-    <link href="assets/dist/css/pink.css" rel="stylesheet">
-    <!-- <link href="assets/dist/css/style.css" rel="stylesheet"> -->
+    <link href="assets/dist/css/black-gray.css" rel="stylesheet">
+
+    <!--Style Switcher-->
+    <link rel="alternate stylesheet" type="text/css" title="black-gray" href="assets/dist/css/black-gray.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green-teal" href="assets/dist/css/green-teal.css" />
+    <link rel="alternate stylesheet" type="text/css" title="gradient-purple" href="assets/dist/css/gradient-purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red-pink" href="assets/dist/css/red-pink.css" />
+    <link rel="alternate stylesheet" type="text/css" title="indigo-blue" href="assets/dist/css/style-new.css" />
+    <link rel="alternate stylesheet" type="text/css" title="deep-purple" href="assets/dist/css/deep-purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="teal" href="assets/dist/css/teal.css" />
+    <link rel="alternate stylesheet" type="text/css" title="pink" href="assets/dist/css/pink.css" />
+    <link rel="alternate stylesheet" type="text/css" title="brown" href="assets/dist/css/brown.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/styleswitcher.css" />
+
     <!--<link href="assets/dist/css/style.rtl.css" rel="stylesheet">-->
 </head>
 
 <body class="fixed sidebar-mini">
+
+    <!-- Style Switcher Starts -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('black-gray');" title="Black gray" class="black-gray"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green-teal');" title="Green teal" class="green-teal"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('gradient-purple');" title="Gradient purple" class="gradient-purple"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red-pink');" title="Red pink" class="red-pink"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('indigo-blue');" title="Indigo blue" class="indigo-blue"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('deep-purple');" title="Deep purple" class="deep-purple"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('teal');" title="Teal" class="teal"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('pink');" title="Pink" class="pink"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('brown');" title="Brown" class="brown"></a>
+                </li>
+
+            </ul>
+
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Style Switcher Ends -->
+
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -761,6 +815,7 @@
     <script src="assets/plugins/flot/source/flot.active.js"></script>
     <!--Page Scripts(used by all page)-->
     <script src="assets/dist/js/sidebar.js"></script>
+    <script src="assets/dist/js/styleswitcher.js"></script>
 </body>
 
 </html>
