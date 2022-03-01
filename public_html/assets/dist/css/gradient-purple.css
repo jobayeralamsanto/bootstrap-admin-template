@@ -2182,6 +2182,7 @@ table code {
 
 .sidebar-nav ul li .nav-second-level li a:hover {
     color: #7b20a5;
+    background-color: #f0f2f5;
 }
 
 .sidebar-nav ul li.mm-active ul li.mm-active a {

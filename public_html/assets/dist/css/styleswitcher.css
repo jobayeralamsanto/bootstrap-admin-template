@@ -1,8 +1,8 @@
 #switcher {
     background: #fff;
     position: fixed;
-    display: none;
-    top: 100px;
+    display: block;
+    top: 50%;
     right: 0;
     direction: ltr;
     z-index: 11111;
@@ -60,11 +60,11 @@
     margin-left: 0px;
     position: fixed;
     right: 0;
-    top: 100px;
-    background: #000;
-    box-shadow: #ccc 0 0 2px;
+    top: 50%;
+    background-image: linear-gradient( 120deg, #099f0d 25%, #0b3212 100%);
+    box-shadow: 0 4px 8px rgb(34 34 34 / 20%);
     font-size: 14px;
-    display: block;
+    display: none;
     -webkit-border-bottom-left-radius: 25px;
     -webkit-border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
