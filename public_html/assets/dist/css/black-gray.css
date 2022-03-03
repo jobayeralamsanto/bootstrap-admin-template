@@ -2170,6 +2170,18 @@ table code {
     padding: 0
 }
 
+.sidebar-nav ul li .nav-second-level li:before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 20px;
+    width: 6px;
+    border-radius: 100%;
+    height: 6px;
+    opacity: 1;
+    background: #3a6073;
+}
+
 .sidebar-nav ul li .nav-second-level li a {
     padding-left: 39px;
     padding-top: 7px;
