@@ -519,7 +519,7 @@
                         </button>
                 </nav>
                 <!--/.navbar-->
-                <!--Content Header (Page header)-->
+                <!--               
                 <div class="content-header">
                     <div class="page-header m-0">
                         <h4 class="page-title">Blank Page</h4>
@@ -544,7 +544,7 @@
                         </ul>
                     </div>
                 </div>
-                <!--/.Content Header (Page header)-->
+              
                 <div class="body-content">
                     <div class="card mb-4">
                         <div class="card-header">
@@ -570,8 +570,289 @@
                         <div class="card-body">
                         </div>
                     </div>
+                </div> -->
+                <!--Content Header (Page header)-->
+                <div class="content-header row align-items-center g-0">
+                    <nav aria-label="breadcrumb" class="col-sm-4 order-sm-last text-sm-end mb-3 mb-sm-0">
+                        <ol class="breadcrumb rounded d-inline-flex fw-semi-bold fs-13 bg-white mb-0 shadow-sm">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Charts</a></li>
+                            <li class="breadcrumb-item active">Charts Js</li>
+                        </ol>
+                    </nav>
+                    <div class="col-sm-8 header-title">
+                        <div class="d-flex align-items-center">
+                            <div class="header-icon d-flex align-items-center justify-content-center rounded shadow-sm text-success flex-shrink-0">
+                                <i class="typcn typcn-chart-pie"></i>
+                            </div>
+                            <div class="">
+                                <h1 class="fw-bold">Chart js</h1>
+                                <small>Simple yet flexible JavaScript charting for designers & developers</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Content Header (Page header)-->
+                <div class="body-content">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="header-body mb-4 pt-0">
+                                <div class="row align-items-end">
+                                    <div class="col">
+                                        <!-- Pretitle -->
+                                        <h6 class="header-pretitle text-muted fs-11 fw-bold text-uppercase mb-1">
+                                            Overview
+                                        </h6>
+                                        <!-- Title -->
+                                        <h1 class="header-title fs-21 fw-bold">
+                                            Performance
+                                        </h1>
+                                    </div>
+                                    <div class="col-auto">
+                                        <!-- Nav -->
+                                        <ul class="nav nav-tabs header-tabs">
+                                            <li class="nav-item">
+                                                <a href="#" id="0" class="nav-link text-center active" data-bs-toggle="tab">
+                                                    <h6 class="header-pretitle text-muted fs-11 fw-bold text-uppercase mb-1">
+                                                        Earnings
+                                                    </h6>
+                                                    <h3 class="mb-0 fs-16 fw-bold">
+                                                        $19.2k
+                                                    </h3>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" id="1" class="nav-link text-center" data-bs-toggle="tab">
+                                                    <h6 class="header-pretitle text-muted fs-11 fw-bold text-uppercase mb-1">
+                                                        Sessions
+                                                    </h6>
+                                                    <h3 class="mb-0 fs-16 fw-bold">
+                                                        92.1k
+                                                    </h3>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" id="2" class="nav-link text-center" data-bs-toggle="tab">
+                                                    <h6 class="header-pretitle text-muted fs-11 fw-bold text-uppercase mb-1">
+                                                        Bounce
+                                                    </h6>
+                                                    <h3 class="mb-0 fs-16 fw-bold">
+                                                        50.2%
+                                                    </h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- / .row -->
+                            </div>
+                            <!-- / .header-body -->
+                            <div class="chart">
+                                <canvas id="forecast" width="300" height="100"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Bar Chart -->
+                        <div class="col-lg-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Bar chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="barChart" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Radar Chart -->
+                        <div class="col-lg-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Rader chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="radarChart" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Line Chart -->
+                        <div class="col-lg-8 d-flex">
+                            <div class="card mb-4 flex-fill w-100">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Line chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="lineChart" height="140"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pie Chart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Pie chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="pieChart" height="310"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Doughnut Chart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Doughut chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="doughutChart" height="310"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Polar Chart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Polar chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="polarChart" height="310"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Bar Chart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Single Bar Chart</h6>
+                                        </div>
+                                        <div class="text-end">
+                                            <div class="actions">
+                                                <a href="#" class="action-item"><i class="ti-reload"></i></a>
+                                                <div class="dropdown action-item">
+                                                    <a href="#" class="action-item" data-bs-toggle="dropdown"><i class="ti-more-alt"></i></a>
+                                                    <div class="dropdown-menu">
+                                                        <a href="#" class="dropdown-item">Refresh</a>
+                                                        <a href="#" class="dropdown-item">Manage Widgets</a>
+                                                        <a href="#" class="dropdown-item">Settings</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="singelBarChart" height="310"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--/.body content-->
+
             </div>
             <!--/.main content-->
             <footer class="footer-content">
