@@ -870,7 +870,7 @@ table code {
 }
 
 .navbar-custom-menu .nav-link:hover {
-    color: #34ffed;
+    color: #8cffd8;
 }
 
 .navbar-custom-menu .nav-link .top-menu-icon {
@@ -996,7 +996,7 @@ table code {
     -ms-transition: all 0.3s linear;
     visibility: hidden;
     opacity: 0;
-    background: #00cd6d;
+    background: #42a34b;
 }
 
 .navbar-custom-menu .dropdown-item:hover:before {
@@ -1010,7 +1010,7 @@ table code {
 .dropdown-item:active,
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #00b7a6;
+    color: #42a34b;
     text-decoration: none;
     background-color: transparent
 }
@@ -1548,7 +1548,7 @@ table code {
 .navbar-icon .user-menu .dropdown-item:focus,
 .navbar-icon .user-menu .dropdown-item:hover {
     background-color: transparent;
-    color: #00cd89;
+    color: #42a34b;
 }
 
 .navbar-icon .user-menu .dropdown-item+.dropdown-item {

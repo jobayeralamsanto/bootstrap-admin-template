@@ -203,17 +203,25 @@ $(document).ready(function() {
     });
 
     var ctx = document.getElementById("barChart").getContext("2d");
+    var gradient = ctx.createLinearGradient(0, 0, 0, 400)
+    gradient.addColorStop(0, '#1b5cbd')
+    gradient.addColorStop(1, '#1bbd42')
+    var gradient1 = ctx.createLinearGradient(0, 0, 0, 400)
+    gradient1.addColorStop(0, '#2b66bf')
+    gradient1.addColorStop(1, '#2291c1')
     var myBar = new Chart(ctx, {
         type: 'roundedBar',
         data: {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             datasets: [{
                 label: 'Students',
-                backgroundColor: chartColors.green,
+                // backgroundColor: chartColors.green,
+                backgroundColor: gradient1,
                 data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32]
             }, {
                 label: 'Teachers',
-                backgroundColor: chartColors.gray,
+                backgroundColor: gradient,
+                // boxshadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2)',
                 data: [15, 10, 20, 12, 6, 7, 10, 15, 15, 20, 15, 20]
             }]
         },

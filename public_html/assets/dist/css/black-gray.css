@@ -870,7 +870,7 @@ table code {
 }
 
 .navbar-custom-menu .nav-link:hover {
-    color: #4fb9ff;
+    color: #9cc7e3;
 }
 
 .navbar-custom-menu .nav-link .top-menu-icon {
@@ -996,7 +996,7 @@ table code {
     -ms-transition: all 0.3s linear;
     visibility: hidden;
     opacity: 0;
-    background: #4fb9ff;
+    background: #7785a3;
 }
 
 .navbar-custom-menu .dropdown-item:hover:before {
@@ -1010,7 +1010,7 @@ table code {
 .dropdown-item:active,
 .dropdown-item:focus,
 .dropdown-item:hover {
-    color: #4fb9ff;
+    color: #7785a3;
     text-decoration: none;
     background-color: transparent
 }
