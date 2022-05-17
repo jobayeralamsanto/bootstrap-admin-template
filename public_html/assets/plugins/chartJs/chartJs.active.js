@@ -12,13 +12,13 @@ $(document).ready(function() {
             datasets: [{
                 type: 'line',
                 label: "Salles",
-                borderColor: "rgb(55, 160, 0)",
+                borderColor: "#1854ed",
                 fill: false,
                 data: temp_dataset
             }, {
                 type: 'bar',
                 label: "Affiliate",
-                backgroundColor: "rgba(55, 160, 0, .1)",
+                backgroundColor: "#303f9f",
                 borderColor: "rgba(55, 160, 0, .4)",
                 data: rain_dataset
             }]
@@ -88,7 +88,7 @@ $(document).ready(function() {
         gray: '#e4e4e4',
         orange: 'rgb(255, 159, 64)',
         yellow: 'rgb(255, 205, 86)',
-        green: '#37a000',
+        green: '#303f9f',
         blue: 'rgb(54, 162, 235)',
         purple: 'rgb(153, 102, 255)',
         grey: 'rgb(231,233,237)'
@@ -204,11 +204,11 @@ $(document).ready(function() {
 
     var ctx = document.getElementById("barChart").getContext("2d");
     var gradient = ctx.createLinearGradient(0, 0, 0, 400)
-    gradient.addColorStop(0, '#1b5cbd')
-    gradient.addColorStop(1, '#1bbd42')
+    gradient.addColorStop(0, '#303f9f')
+    gradient.addColorStop(1, '#1976d2')
     var gradient1 = ctx.createLinearGradient(0, 0, 0, 400)
-    gradient1.addColorStop(0, '#2b66bf')
-    gradient1.addColorStop(1, '#2291c1')
+    gradient1.addColorStop(0, '#344ffb')
+    gradient1.addColorStop(1, '#0074e7')
     var myBar = new Chart(ctx, {
         type: 'roundedBar',
         data: {
