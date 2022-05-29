@@ -41,7 +41,7 @@
 }
 
 @media (prefers-reduced-motion:no-preference) {
-    :root {
+     :root {
         scroll-behavior: smooth
     }
 }
@@ -6914,6 +6914,10 @@ fieldset:disabled .btn {
 
 .border-5 {
     border-width: 5px!important
+}
+
+.w-10 {
+    width: 10%!important
 }
 
 .w-25 {
