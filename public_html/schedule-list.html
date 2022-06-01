@@ -574,40 +574,49 @@
                                             <h6 class="fs-17 fw-semi-bold mb-0">Schedule List</h6>
                                         </div>
                                         <div class="text-end">
-                                            <a href="#" class="btn btn-primary w-auto me-2"> Add New Schedule</a>
-                                            <a href="#" class="btn btn-primary w-auto me-2"> Export all plan</a>
+                                            <a href="add-new-schedule.html" class="btn btn-primary w-auto me-2"><i class="typcn typcn-plus"></i> Add New Schedule</a>
+                                            <a href="#" class="btn btn-primary w-auto me-2"><i class="typcn typcn-upload"></i> Export all plan</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table id="example" class="table display table-bordered table-striped table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>SL No.</th>
-                                                    <th>All</th>
-                                                    <th>User Name</th>
-                                                    <th>Outlate</th>
-                                                    <th>Location Name</th>
-                                                    <th>Schedule Date</th>
-                                                    <th>Schedule Time</th>
-                                                    <th>Visit Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>Edinburgh</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <table class="table table-striped table-bordered dt-responsive nowrap bootstrap4-styling">
+                                        <thead>
+                                            <tr>
+                                                <th>SL No.</th>
+                                                <th>All</th>
+                                                <th>User Name</th>
+                                                <th>Outlet</th>
+                                                <th>Location Name</th>
+                                                <th>Schedule Date</th>
+                                                <th>Schedule Time</th>
+                                                <th>Visit Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-success btn-sm me-1">Sales Visit</a>
+                                                    <a href="merchandise-visit.html" class="btn btn-purple btn-sm">Merchandise Visit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="btn btn-success-soft btn-sm me-1"><i class="far fa-eye"></i></a>
+                                                    <a href="#" class="btn btn-danger-soft btn-sm"><i class="far fa-trash-alt"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#" class="btn btn-success w-auto me-2">Delete all</a>
                                 </div>
                             </div>
                         </div>
