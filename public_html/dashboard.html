@@ -19,10 +19,11 @@
     <link href="assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
     <link href="assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet">
     <link href="assets/plugins/select2-bootstrap4/dist/select2-bootstrap4.min.css" rel="stylesheet">
-    <link href="assets/plugins/jquery.sumoselect/sumoselect.min.css" rel="stylesheet">
+    <link href="assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!--Start Your Custom Style Now-->
     <link href="assets/dist/css/green-teal.css" rel="stylesheet">
@@ -533,7 +534,7 @@
                                     <div id="flush-collapseOne" class="accordion-collapse collapse bg-white px-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                         <div class="row">
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Location</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Country</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -547,7 +548,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Outlet Type</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Regions</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -560,7 +561,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Channel Name</label>
+                                                <label class="col-form-label text-end fw-semi-bold">State</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -572,7 +573,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Fieldstaff</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Location</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -602,7 +603,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Events</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Project</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -617,7 +618,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Product</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Channel</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -632,7 +633,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Custom Date</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Outlet</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -647,7 +648,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Custom Search</label>
+                                                <label class="col-form-label text-end fw-semi-bold">Brand</label>
                                                 <div class="col-12">
                                                     <select class="form-control placeholder-single">                                       
                                                         <optgroup label="Central Time Zone">
@@ -659,6 +660,12 @@
                                                             <option value="KY">Kentucky</option>
                                                         </optgroup>                                              
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                <label class="col-form-label text-end fw-semi-bold">Date</label>
+                                                <div class="col-12">
+                                                    <input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6 col-lg-3 mb-3 d-flex align-items-end">
@@ -677,14 +684,14 @@
                             <div class="card card-stats statistic-box mb-4">
                                 <div class="card-header card-header-warning card-header-icon position-relative border-0 text-end px-3 py-0">
                                     <div class="card-icon d-flex align-items-center justify-content-center">
-                                        <i class="typcn typcn-user-outline"></i>
+                                        <i class="typcn typcn-shopping-cart"></i>
                                     </div>
-                                    <p class="fs-15 fw-bold mt-3">User</p>
+                                    <p class="fs-17 fw-bold mt-3">Sales (Qty)</p>
                                     <h3 class="card-title fs-18 fw-bold">2352</h3>
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="stats">
-                                        <a href="user-list.html" class="warning-link">Total User</a>
+                                        <a href="#" class="warning-link">Total Sales</a>
                                     </div>
                                 </div>
                             </div>
@@ -693,14 +700,14 @@
                             <div class="card card-stats statistic-box mb-4">
                                 <div class="card-header card-header-success card-header-icon position-relative border-0 text-end px-3 py-0">
                                     <div class="card-icon d-flex align-items-center justify-content-center">
-                                        <i class="typcn typcn-home-outline"></i>
+                                        <i class="typcn typcn-calculator"></i>
                                     </div>
-                                    <p class="fs-15 fw-bold mt-3">Fieldstaff</p>
+                                    <p class="fs-17 fw-bold mt-3">Sales (Amount)</p>
                                     <h3 class="card-title fs-21 fw-bold">455</h3>
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="stats">
-                                        <a href="fieldstaff.html" class="warning-link">Total fieldstaff</a>
+                                        <a href="#" class="warning-link">Total Anount</a>
                                     </div>
                                 </div>
                             </div>
@@ -709,14 +716,14 @@
                             <div class="card card-stats statistic-box mb-4">
                                 <div class="card-header card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
                                     <div class="card-icon d-flex align-items-center justify-content-center">
-                                        <i class="typcn typcn-group-outline"></i>
+                                        <i class="typcn typcn-chart-line-outline"></i>
                                     </div>
-                                    <p class="fs-15 fw-bold mt-3">Client</p>
+                                    <p class="fs-17 fw-bold mt-3">Ready Stock (Sales)</p>
                                     <h3 class="card-title fs-21 fw-bold">5</h3>
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="stats">
-                                        <a href="client-list.html" class="warning-link">Total client</a>
+                                        <a href="#" class="warning-link">Total Ready Stock</a>
                                     </div>
                                 </div>
                             </div>
@@ -725,374 +732,153 @@
                             <div class="card card-stats statistic-box mb-4">
                                 <div class="card-header card-header-info card-header-icon position-relative border-0 text-end px-3 py-0">
                                     <div class="card-icon d-flex align-items-center justify-content-center">
-                                        <i class="fab fa-product-hunt"></i>
+                                        <!-- <i class="fab fa-product-hunt"></i> -->
+                                        <i class="fas fa-handshake"></i>
                                     </div>
-                                    <p class="fs-15 fw-bold mt-3">Product</p>
+                                    <p class="fs-17 fw-bold mt-3">Presales (Orders)</p>
                                     <h3 class="card-title fs-21 fw-bold">5</h3>
                                 </div>
                                 <div class="card-footer p-3">
                                     <div class="stats">
-                                        <a href="product-list.html" class="warning-link">Total Product</a>
+                                        <a href="#" class="warning-link">Total Presales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-info card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-chart-bar-outline"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">Average Sales (Qty) Day</p>
+                                    <h3 class="card-title fs-18 fw-bold">2352</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">Total Average Sales</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-eye-outline"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">Sales Callage/Visits</p>
+                                    <h3 class="card-title fs-21 fw-bold">455</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">Total Sales Visit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-success card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-eye-outline"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">Avg. Callage/Visits</p>
+                                    <h3 class="card-title fs-21 fw-bold">5</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">Total Avg. Callage/Visits</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-warning card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-chart-bar-outline"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">Avg. Sales/Salesr ep (Qty)</p>
+                                    <h3 class="card-title fs-21 fw-bold">5</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">Total Avg. Sales/Salesr ep (Qty)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-success card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-calculator"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">Avg. Sales/Salesr ep (Amount)</p>
+                                    <h3 class="card-title fs-21 fw-bold">5</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">Total Avg. Sales/Salesr ep (Amount)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                            <div class="card card-stats statistic-box mb-4">
+                                <div class="card-header card-header-info card-header-icon position-relative border-0 text-end px-3 py-0">
+                                    <div class="card-icon d-flex align-items-center justify-content-center">
+                                        <i class="typcn typcn-arrow-repeat"></i>
+                                    </div>
+                                    <p class="fs-17 fw-bold mt-3">No. Repeated Purchase</p>
+                                    <h3 class="card-title fs-21 fw-bold">5</h3>
+                                </div>
+                                <div class="card-footer p-3">
+                                    <div class="stats">
+                                        <a href="#" class="warning-link">No. Repeated Purchase</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-lg-8 d-flex">
-                            <div class="card mb-4 flex-fill w-100">
-                                <div class="card-header">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <h6 class="fs-17 fw-semi-bold mb-0">Product Share By Company</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="chartdiv" style="width: 100%;
-                                    height: 400px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 d-flex">
-                            <div class="card mb-4 flex-fill w-100">
-                                <div class="card-body">
-                                    <div class="col-12">
-                                        <div class="card gradient-7 card-stats statistic-box mb-4">
-                                            <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start text-white">
-                                                        <h3 class="card-title fs-23 fw-bold">1</h3>
-                                                        <p class="fs-17 fw-bold mt-3">POSMs</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end">
-                                                        <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="add-pos-item.html" class="warning-link text-white">Total POSMs</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="card gradient-8 card-stats statistic-box mb-4">
-                                            <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start text-white">
-                                                        <h3 class="card-title fs-23 fw-bold">3</h3>
-                                                        <p class="fs-17 fw-bold mt-3">Outlet</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end">
-                                                        <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="outlate-list.html" class="warning-link text-white">Total Outlate</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="card gradient-9 card-stats statistic-box mb-4">
-                                            <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start text-white">
-                                                        <h3 class="card-title fs-23 fw-bold"><span>48</span>/ <span>66</span></h3>
-                                                        <p class="fs-17 fw-bold mt-3">Case / Unit</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end">
-                                                        <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="product-inventory.html" class="warning-link text-white">Total Stock</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-12 col-lg-4">
-                            <div class="crad">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="typcn typcn-calendar"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Schedule</p>
-                                                <h3 class="card-title fs-21 fw-bold">5</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="schedule-list.html" class="warning-link">Total Schedule</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-success card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="typcn typcn-eye"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Actual Visit</p>
-                                                <h3 class="card-title fs-21 fw-bold">5</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="schedule-list.html" class="warning-link">Actual Visit</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 mb-3 d-flex align-items-end">
-                                    <a href="schedule-list.html" class="btn btn-success">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="crad">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-info card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="fab fa-product-hunt"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Payment Receive</p>
-                                                <h3 class="card-title fs-21 fw-bold">5</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="payments.html" class="warning-link">Payment Receive</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-info card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="fab fa-product-hunt"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Receivable/ Total Billing</p>
-                                                <h3 class="card-title fs-21 fw-bold">5</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="payments.html" class="warning-link">Receivable/ Total Billing</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 mb-3 d-flex align-items-end">
-                                    <a href="payments.html" class="btn btn-success">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="crad">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-warning card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="typcn typcn-point-of-interest-outline"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Order</p>
-                                                <h3 class="card-title fs-21 fw-bold">5</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="order.html" class="warning-link">Order</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="card card-stats statistic-box mb-4">
-                                            <div class="card-header card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                                <div class="card-icon d-flex align-items-center justify-content-center">
-                                                    <i class="typcn typcn-eject-outline"></i>
-                                                </div>
-                                                <p class="fs-15 fw-bold mt-3">Actual Sales VS Target Sales</p>
-                                                <h3 class="card-title fs-21 fw-bold">5/0</h3>
-                                            </div>
-                                            <div class="card-footer p-3">
-                                                <div class="stats">
-                                                    <a href="sales-dashboard.html" class="warning-link">Actual Sales VS Target Sales</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card gradient-4 card-stats statistic-box mb-4">
-                                <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                    <div class="align-items-center justify-content-between d-flex mt-3">
-                                        <div class="text-start text-white">
-                                            <p class="fs-17 fw-bold mt-3">Upcomming Event</p>
-                                            <h3 class="card-title fs-23 fw-bold">1</h3>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="card-footer p-3">
-                                    <div class="stats">
-                                        <a href="manage-events.html" class="warning-link text-white">More Event</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card gradient-5 card-stats statistic-box mb-4">
-                                <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                    <div class="align-items-center justify-content-between d-flex mt-3">
-                                        <div class="text-start text-white">
-                                            <p class="fs-17 fw-bold mt-3">Participants For Event</p>
-                                            <h3 class="card-title fs-23 fw-bold">1</h3>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer p-3">
-                                    <div class="stats">
-                                        <a href="participants.html" class="warning-link text-white">More Participants</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card gradient-6 card-stats statistic-box mb-4">
-                                <div class="card-header-danger card-header-icon position-relative border-0 text-end px-3 py-0">
-                                    <div class="align-items-center justify-content-between d-flex mt-3">
-                                        <div class="text-start text-white">
-                                            <p class="fs-17 fw-bold mt-3">Events</p>
-                                            <h3 class="card-title fs-23 fw-bold">1</h3>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <i class="d-block rounded-circle fas fa-list-alt fa-4x opacity-75 text-white"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer p-3">
-                                    <div class="stats">
-                                        <a href="manage-events.html" class="warning-link text-white">Total Events</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col-lg-6 d-flex">
-                            <div class="card mb-4 flex-fill w-100">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="d-flex gradient-11 position-relative overflow-hidden flex-column p-3 mb-3 bg-white shadow-sm rounded">
-                                                <i class="fas fa fa-smile opacity-25 fa-5x text-warning decorative-icon"></i>
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start">
-                                                        <h3 class="card-title fs-23 fw-bold">4</h3>
-                                                        <p class="fs-17 fw-bold mt-3"> No of active survey</p>
-                                                    </div>
-                                                </div>
-                                                <div class="p-2 border-top border-dark">
-                                                    <a class="text-black fs-15" href="survey-preview.html">No of active survey</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="d-flex gradient-12 position-relative overflow-hidden flex-column p-3 mb-3 bg-white shadow-sm rounded">
-                                                <i class="fas fa fa-smile opacity-25 fa-5x text-warning decorative-icon"></i>
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start">
-                                                        <h3 class="card-title fs-23 fw-bold">0</h3>
-                                                        <p class="fs-17 fw-bold mt-3">Total participants</p>
-                                                    </div>
-                                                </div>
-                                                <div class="p-2 border-top border-dark">
-                                                    <a class="text-black fs-15" href="survey-preview.html">Total participants</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="d-flex gradient-10 position-relative overflow-hidden flex-column p-3 mb-3 bg-white shadow-sm rounded">
-                                                <i class="fas fa fa-smile opacity-25 fa-5x text-warning decorative-icon"></i>
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start">
-                                                        <h3 class="card-title fs-23 fw-bold">2</h3>
-                                                        <p class="fs-17 fw-bold mt-3">Total outlet map to fieldstaff</p>
-                                                    </div>
-                                                </div>
-                                                <div class="p-2 border-top border-dark">
-                                                    <a class="text-black fs-15" href="outlet-map-to-fieldstaff.html">Total outlet map to fieldstaff</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="d-flex gradient-13 position-relative overflow-hidden flex-column p-3 mb-3 bg-white shadow-sm rounded">
-                                                <i class="fas fa fa-smile opacity-25 fa-5x text-warning decorative-icon"></i>
-                                                <div class="align-items-center justify-content-between d-flex mt-3">
-                                                    <div class="text-start">
-                                                        <h3 class="card-title fs-23 fw-bold">2</h3>
-                                                        <p class="fs-17 fw-bold mt-3">Total outlet map to client</p>
-                                                    </div>
-                                                </div>
-                                                <div class="p-2 border-top border-dark">
-                                                    <a class="text-black fs-15" href="outlate-list.html">Total outlet map to client</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex">
-                            <div class="card mb-4 flex-fill w-100">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 class="fs-17 fw-semi-bold mb-0">Active Survey List</h6>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Recent Sales</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table display table-bordered table-striped table-hover bg-white m-0 card-table">
+                                        <table id="example" class="table display table-bordered table-striped table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>SL</th>
-                                                    <th>Survey Name</th>
+                                                    <th>SL No.</th>
+                                                    <th>Outlet Name</th>
+                                                    <th>Unit Qty</th>
+                                                    <th>Case Qty</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
-                                                    <td>Nixon</td>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>System Architect</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                    <td>$320,800</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-success-soft btn-sm me-1" data-bs-toggle="tooltip" title="Edit"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-danger-soft btn-sm" data-bs-toggle="tooltip" title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1101,6 +887,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-12 d-flex">
+                            <div class="card mb-4 flex-fill w-100">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Recently Captured Image</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="popup-gallery">
+                                        <a href="assets/dist/img/pos/01.webp" title="The Cleaner"><img src="assets/dist/img/pos/01.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/02.webp" title="Winter Dance"><img src="assets/dist/img/pos/02.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/03.webp" title="The Uninvited Guest"><img src="assets/dist/img/pos/03.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/01.webp" title="The Cleaner"><img src="assets/dist/img/pos/01.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/02.webp" title="Winter Dance"><img src="assets/dist/img/pos/02.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/03.webp" title="The Uninvited Guest"><img src="assets/dist/img/pos/03.webp" width="200" height="200"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <!--/.body content-->
             </div>
@@ -1124,18 +936,14 @@
 
     <!-- Third Party Scripts(used by this page)-->
     <script src="assets/plugins/select2/dist/js/select2.min.js"></script>
-    <script src="assets/plugins/jquery.sumoselect/jquery.sumoselect.min.js"></script>
-    <!--Page Active Scripts(used by this page)-->
     <script src="assets/dist/js/pages/demo.select2.js"></script>
-    <script src="assets/dist/js/pages/demo.jquery.sumoselect.js"></script>
-    <script src="assets/dist/js/pages/newsletter.active.js"></script>
 
-    <script src="assets/plugins/amcharts5/index.js"></script>
-    <script src="assets/plugins/amcharts5/percent.js"></script>
-    <script src="assets/plugins/amcharts5/themes/Animated.js"></script>
-    <script src="assets/plugins/amcharts5/xy.js"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>>
+    <script src="assets/plugins/daterangepicker/daterangepicker.active.js"></script>
 
-    <!-- Third Party Scripts(used by this page)-->
+    <script src="assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
     <script src="assets/plugins/datatables/dataTables.min.js"></script>
     <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
@@ -1151,63 +959,29 @@
     <!--Page Scripts(used by all page)-->
     <script src="assets/plugins/datatables/data-bootstrap4.active.js"></script>
     <script src="assets/dist/js/sidebar.js"></script>
-    <script src="assets/dist/js/styleswitcher.js"></script>
 
-
-    <!-- Chart code -->
     <script>
-        am5.ready(function() {
-            var root = am5.Root.new("chartdiv");
-
-            root.setThemes([
-                am5themes_Animated.new(root)
-            ]);
-
-            var chart = root.container.children.push(am5percent.PieChart.new(root, {
-                layout: root.verticalLayout
-            }));
-
-            var series = chart.series.push(am5percent.PieSeries.new(root, {
-                valueField: "value",
-                categoryField: "category"
-            }));
-
-            series.data.setAll([{
-                value: 10,
-                category: "One"
-            }, {
-                value: 9,
-                category: "Two"
-            }, {
-                value: 6,
-                category: "Three"
-            }, {
-                value: 5,
-                category: "Four"
-            }, {
-                value: 4,
-                category: "Five"
-            }, {
-                value: 3,
-                category: "Six"
-            }, {
-                value: 1,
-                category: "Seven"
-            }, ]);
-
-            var legend = chart.children.push(am5.Legend.new(root, {
-                centerX: am5.percent(50),
-                x: am5.percent(50),
-                marginTop: 15,
-                marginBottom: 15
-            }));
-
-            legend.data.setAll(series.dataItems);
-
-            series.appear(1000, 100);
-
+        $(document).ready(function() {
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
         });
     </script>
+
 </body>
 
 </html>

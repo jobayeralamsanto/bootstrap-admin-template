@@ -41,10 +41,6 @@
                         extend: 'pdf',
                         className: 'btn-success'
                     },
-                    {
-                        extend: 'colvis',
-                        className: 'btn-success'
-                    }
                 ]
 
             });
