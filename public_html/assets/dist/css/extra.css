@@ -92,6 +92,26 @@
     height: 24px;
 }
 
+.wid-100 {
+    width: 100px
+}
+
+.mt-n5 {
+    margin-top: -3rem!important
+}
+
+.img-radius {
+    border-radius: 50%
+}
+
+.text-h-primary:hover {
+    color: #4099ff!important
+}
+
+.f-18 {
+    font-size: 18px
+}
+
 .filter-bt {
     background: white;
     padding-left: 10px;
@@ -130,29 +150,64 @@
     border-radius: 0rem!important;
 }
 
-.user-card .cover-img-block .change-cover {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    z-index: 5;
-    opacity: 0;
-    transition: all .3s ease-in-out;
+.user-profile .card-body {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 4px -2px rgb(54 80 138 / 30%);
 }
 
-.user-card .cover-img-block .overlay {
+.user-card .user-about-block {
+    margin-top: -30px
+}
+
+.user-card .user-about-block img {
+    box-shadow: 0 0 0 5px #fff
+}
+
+.user-card .user-about-block .certificated-badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    padding: 5px 3px
+}
+
+.user-card .user-about-block .certificated-badge .bg-icon {
+    font-size: 22px
+}
+
+.user-card .user-about-block .certificated-badge .front-icon {
+    font-size: 11px;
+    position: absolute;
+    top: 11px;
+    left: 9px
+}
+
+.user-card .hover-data {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    z-index: 1;
-    background: rgba(0, 0, 0, .4);
-    transition: all .3s ease-in-out;
+    background: rgba(36, 46, 62, .92);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all .3s ease-in-out
 }
 
-.user-card .cover-img-block {
-    position: relative;
+.user-card:hover .hover-data {
+    transform: scale(1)
+}
+
+.user-card .change-profile .dropdown-toggle::after {
+    display: none
 }
 
 .user-card .change-profile .profile-dp {
@@ -161,25 +216,27 @@
     padding: 5px;
     width: 110px;
     height: 110px;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
-.user-card .change-profile .profile-dp .overlay {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 1;
-    overflow: hidden;
-    background: rgba(0, 0, 0, .4);
-    transition: all .3s ease-in-out;
-}
-
-.user-card .user-about-block img {
-    box-shadow: 0 0 0 5px #fff;
+@media only screen and (max-width:992px) {
+    .user-card .user-about-block {
+        margin-top: -10px
+    }
+    .user-card .wid-80 {
+        width: 60px
+    }
+    .user-card .change-profile .profile-dp {
+        width: 90px;
+        height: 90px
+    }
+    .user-card.user-card-2.shape-right .cover-img-block {
+        -webkit-clip-path: none;
+        clip-path: none
+    }
+    .user-card .cover-img-block .change-cover .dropdown-toggle {
+        padding: 5px 7px
+    }
 }
 
 .user-card .dropdown-toggle {
@@ -240,26 +297,32 @@
     box-shadow: 0 0 0 5px #fff
 }
 
-.user-card .user-about-block .certificated-badge {
+.user-card-3 .certificated-badge {
     position: absolute;
-    bottom: -5px;
-    right: -5px;
+    bottom: 5px;
+    right: 5px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #fff;
     padding: 5px 3px
 }
 
-.user-card .user-about-block .certificated-badge .bg-icon {
-    font-size: 22px
+.user-card-3 .certificated-badge .bg-icon {
+    font-size: 30px
 }
 
-.user-card .user-about-block .certificated-badge .front-icon {
-    font-size: 11px;
+.user-card-3 .certificated-badge .front-icon {
+    font-size: 14px;
     position: absolute;
-    top: 11px;
-    left: 9px
+    top: 14px;
+    left: 13px
+}
+
+.user-profile .user-about-block .certificated-badge {
+    bottom: 8px;
+    right: 0;
+    z-index: 2
 }
 
 .user-card .hover-data {
