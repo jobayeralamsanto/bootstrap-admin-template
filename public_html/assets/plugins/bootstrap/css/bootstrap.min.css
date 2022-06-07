@@ -5908,7 +5908,7 @@ fieldset:disabled .btn {
 
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow,
 .bs-tooltip-end .tooltip-arrow {
-    left: 0;
+    left: 0px;
     width: .4rem;
     height: .8rem
 }

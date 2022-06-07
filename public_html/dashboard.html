@@ -19,15 +19,41 @@
     <link href="assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
     <link href="assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet">
     <link href="assets/plugins/select2-bootstrap4/dist/select2-bootstrap4.min.css" rel="stylesheet">
-    <link href="assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
 
     <!--Start Your Custom Style Now-->
     <link href="assets/dist/css/green-teal.css" rel="stylesheet">
     <link href="assets/dist/css/extra.css" rel="stylesheet">
+    <style>
+        a[data-fancybox] img {
+            cursor: zoom-in;
+        }
+        
+        .fancybox__container {
+            --fancybox-bg: rgba(17, 6, 25, 0.85);
+        }
+        
+        .fancybox__container .fancybox__content {
+            /* Create white border around the image */
+            box-sizing: content-box;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 6px;
+            color: #374151;
+            box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+        }
+        
+        .fancybox__caption {
+            max-width: 80%;
+            /* Prevent opacity change when dragging up/down */
+            --fancybox-opacity: 1;
+        }
+    </style>
 
 </head>
 
@@ -890,7 +916,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-12 d-flex">
                             <div class="card mb-4 flex-fill w-100">
                                 <div class="card-header">
@@ -902,12 +928,87 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="popup-gallery">
-                                        <a href="assets/dist/img/pos/01.webp" title="The Cleaner"><img src="assets/dist/img/pos/01.webp" width="200" height="200"></a>
-                                        <a href="assets/dist/img/pos/02.webp" title="Winter Dance"><img src="assets/dist/img/pos/02.webp" width="200" height="200"></a>
-                                        <a href="assets/dist/img/pos/03.webp" title="The Uninvited Guest"><img src="assets/dist/img/pos/03.webp" width="200" height="200"></a>
-                                        <a href="assets/dist/img/pos/01.webp" title="The Cleaner"><img src="assets/dist/img/pos/01.webp" width="200" height="200"></a>
-                                        <a href="assets/dist/img/pos/02.webp" title="Winter Dance"><img src="assets/dist/img/pos/02.webp" width="200" height="200"></a>
-                                        <a href="assets/dist/img/pos/03.webp" title="The Uninvited Guest"><img src="assets/dist/img/pos/03.webp" width="200" height="200"></a>
+                                        <a href="assets/dist/img/pos/02.webp " data-tip="tip-first"><img src="assets/dist/img/pos/02.webp " width="200 " height="200 "></a>
+                                        <a href="assets/dist/img/pos/03.webp " title="The Uninvited Guest "><img src="assets/dist/img/pos/03.webp " width="200 " height="200 "></a>
+                                        <a href="assets/dist/img/pos/01.webp " title="The Cleaner "><img src="assets/dist/img/pos/01.webp " width="200 " height="200 "></a>
+                                        <a href="assets/dist/img/pos/02.webp " title="Winter Dance "><img src="assets/dist/img/pos/02.webp " width="200 " height="200 "></a>
+                                        <a href="assets/dist/img/pos/03.webp " title="The Uninvited Guest "><img src="assets/dist/img/pos/03.webp " width="200 " height="200 "></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              -->
+
+                    <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                        <a data-bs-toggle="tooltip" data-bs-html="true" title="<div><i class='fa fa-user'></i> <b>Field staff</b> : bdtask Test</div>
+                    <div><b>Outlet Name</b> : 7up Outlet</div> 
+                    <div>  <b>Location Name</b> : Aba North</div> 
+                    <div><b>Visit Time</b> : 2022-04-21 00:00:00</div>" data-caption="<div><i class='fa fa-user'></i> <b>Field staff</b> : bdtask Test</div>
+                    <div><b>Outlet Name</b> : 7up Outlet</div> 
+                    <div>  <b>Location Name</b> : Aba North</div> 
+                    <div><b>Visit Time</b> : 2022-04-21 00:00:00</div>" data-fancybox="gallery" href="https://lipsum.app/id/1/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/1/200x150" />
+                        </a>
+                        <a data-caption="Short caption" data-fancybox="gallery" href="https://lipsum.app/id/2/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/2/200x150" />
+                        </a>
+                        <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/3/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/3/200x150" />
+                        </a>
+                        <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/4/800x450">
+                            <img src="https://lipsum.app/id/4/200x150" />
+                        </a>
+                        <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/5/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/5/200x150" />
+                        </a>
+                        <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/6/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/6/200x150" />
+                        </a>
+                        <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/7/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/7/200x150" />
+                        </a>
+                    </div>
+
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Recent Sales</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="example" class="table display table-bordered table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>SL No.</th>
+                                                    <th>Outlet Name</th>
+                                                    <th>Unit Qty</th>
+                                                    <th>Case Qty</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>System Architect</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                    <td>$320,800</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-success-soft btn-sm me-1" data-bs-toggle="tooltip" title="Edit"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-danger-soft btn-sm" data-bs-toggle="tooltip" title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -915,74 +1016,77 @@
                     </div>
 
 
+
                 </div>
                 <!--/.body content-->
             </div>
             <!--/.main content-->
-            <footer class="footer-content">
-                <div class="footer-text d-flex align-items-center justify-content-between">
-                    <div class="copy">© 2018 Bdtask Responsive Bootstrap 5 Dashboard Template</div>
-                    <div class="credit">Designed by: <a href="#">Bdtask</a></div>
+            <footer class="footer-content ">
+                <div class="footer-text d-flex align-items-center justify-content-between ">
+                    <div class="copy ">© 2018 Bdtask Responsive Bootstrap 5 Dashboard Template</div>
+                    <div class="credit ">Designed by: <a href="# ">Bdtask</a></div>
                 </div>
             </footer>
             <!--/.footer content-->
-            <div class="overlay"></div>
+            <div class="overlay "></div>
         </div>
         <!--/.wrapper-->
     </div>
     <!--Global script(used by all pages)-->
     <script src="assets/plugins/jQuery/jquery.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/plugins/metisMenu/metisMenu.min.js"></script>
-    <script src="assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="assets/plugins/metisMenu/metisMenu.min.js "></script>
+    <script src="assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- Third Party Scripts(used by this page)-->
-    <script src="assets/plugins/select2/dist/js/select2.min.js"></script>
-    <script src="assets/dist/js/pages/demo.select2.js"></script>
+    <script src="assets/plugins/select2/dist/js/select2.min.js "></script>
+    <script src="assets/dist/js/pages/demo.select2.js "></script>
 
-    <script src="assets/plugins/moment/moment.min.js"></script>
-    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>>
-    <script src="assets/plugins/daterangepicker/daterangepicker.active.js"></script>
+    <script src="assets/plugins/moment/moment.min.js "></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js "></script>>
+    <script src="assets/plugins/daterangepicker/daterangepicker.active.js "></script>
 
-    <script src="assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
 
-    <script src="assets/plugins/datatables/dataTables.min.js"></script>
-    <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
-    <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
-    <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
-    <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
-    <script src="assets/plugins/datatables/jszip.min.js"></script>
-    <script src="assets/plugins/datatables/pdfmake.min.js"></script>
-    <script src="assets/plugins/datatables/vfs_fonts.js"></script>
-    <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
-    <script src="assets/plugins/datatables/buttons.print.min.js"></script>
-    <script src="assets/plugins/datatables/buttons.colVis.min.js"></script>
+
+    <script src="assets/plugins/datatables/dataTables.min.js "></script>
+    <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js "></script>
+    <script src="assets/plugins/datatables/dataTables.responsive.min.js "></script>
+    <script src="assets/plugins/datatables/responsive.bootstrap4.min.js "></script>
+    <script src="assets/plugins/datatables/dataTables.buttons.min.js "></script>
+    <script src="assets/plugins/datatables/buttons.bootstrap4.min.js "></script>
+    <script src="assets/plugins/datatables/jszip.min.js "></script>
+    <script src="assets/plugins/datatables/pdfmake.min.js "></script>
+    <script src="assets/plugins/datatables/vfs_fonts.js "></script>
+    <script src="assets/plugins/datatables/buttons.html5.min.js "></script>
+    <script src="assets/plugins/datatables/buttons.print.min.js "></script>
+    <script src="assets/plugins/datatables/buttons.colVis.min.js "></script>
     <!--Page Scripts(used by all page)-->
-    <script src="assets/plugins/datatables/data-bootstrap4.active.js"></script>
-    <script src="assets/dist/js/sidebar.js"></script>
+    <script src="assets/plugins/datatables/data-bootstrap4.active.js "></script>
+    <script src="assets/dist/js/sidebar.js "></script>
 
     <script>
-        $(document).ready(function() {
-            $('.popup-gallery').magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                tLoading: 'Loading image #%curr%...',
-                mainClass: 'mfp-img-mobile',
-                gallery: {
-                    enabled: true,
-                    navigateByImgClick: true,
-                    preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-                },
-                image: {
-                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                    titleSrc: function(item) {
-                        return item.el.attr('title');
-                    }
-                }
-            });
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: false,
+            Toolbar: false,
+
+            Image: {
+                zoom: false,
+                click: false,
+                wheel: "slide",
+            },
         });
     </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+
+
 
 </body>
 
