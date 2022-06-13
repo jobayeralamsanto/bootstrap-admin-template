@@ -52,7 +52,7 @@
     };
     // Initialize
     $(document).ready(function() {
-        "use strict"; // Start of use strict
+        "use strict";
         tableBootstrap4Style.initialize();
     });
 
