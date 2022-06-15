@@ -533,33 +533,43 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-3 row">
-                                        <label class="col-xl-3 col-xxl-2 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Category name *</label>
-                                        <div class="col-xl-9 col-xxl-10">
-                                            <input class="form-control" type="text" id="example-text-input">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="mb-3 row">
+                                                <label class="col-xl-3 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Category name *</label>
+                                                <div class="col-xl-9">
+                                                    <input class="form-control" type="text" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label class="col-xl-3 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Parent Category</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-control placeholder-single">                                       
+                                                        <optgroup label="Central Time Zone">
+                                                            <option value="AL">Alabama</option>
+                                                            <option value="AR">Arkansas</option>
+                                                            <option value="IL">Illinois</option>
+                                                            <option value="IA">Iowa</option>
+                                                            <option value="KS">Kansas</option>
+                                                            <option value="KY">Kentucky</option>
+                                                            <option value="LA">Louisiana</option>
+                                                            <option value="MN">Minnesota</option>
+                                                        </optgroup>                                              
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label class="col-xl-3 col-xxl-2 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Description</label>
-                                        <div class="col-xl-9 col-xxl-10">
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label class="col-xl-3 col-xxl-2 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Parent Category</label>
-                                        <div class="col-xl-9 col-xxl-10">
-                                            <select class="form-control placeholder-single">                                       
-                                                <optgroup label="Central Time Zone">
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="AR">Arkansas</option>
-                                                    <option value="IL">Illinois</option>
-                                                    <option value="IA">Iowa</option>
-                                                    <option value="KS">Kansas</option>
-                                                    <option value="KY">Kentucky</option>
-                                                    <option value="LA">Louisiana</option>
-                                                    <option value="MN">Minnesota</option>
-                                                </optgroup>                                              
-                                            </select>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="mb-3 row">
+                                                <label class="col-xl-3 col-form-label text-end fw-semi-bold justify-content-start d-flex"> Description</label>
+                                                <div class="col-xl-9">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row d-flex justify-content-end">
+                                                <a href="#" class="btn btn-primary me-1 w-auto">Reset</a>
+                                                <a href="#" class="btn btn-success me-3 w-auto">Add</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -593,8 +603,8 @@
                                                     <td>System Architect</td>
                                                     <td>Edinburgh</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-success-soft btn-sm me-1"><i class="far fa-eye"></i></a>
-                                                        <a href="#" class="btn btn-danger-soft btn-sm"><i class="far fa-trash-alt"></i></a>
+                                                        <a href="edit-product-category.html" class="btn btn-success-soft btn-sm me-1" title="Edit"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-danger-soft btn-sm" title="Delete"><i class="far fa-trash-alt"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -602,13 +612,11 @@
                                                     <td>Accountant</td>
                                                     <td>Tokyo</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-success-soft btn-sm me-1"><i class="far fa-eye"></i></a>
-                                                        <a href="#" class="btn btn-danger-soft btn-sm"><i class="far fa-trash-alt"></i></a>
+                                                        <a href="edit-product-category.html" class="btn btn-success-soft btn-sm me-1" title="Edit"><i class="far fa-edit"></i></a>
+                                                        <a href="#" class="btn btn-danger-soft btn-sm" title="Delete"><i class="far fa-trash-alt"></i></a>
                                                     </td>
                                                 </tr>
-
                                             </tbody>
-
                                         </table>
                                     </div>
                                 </div>

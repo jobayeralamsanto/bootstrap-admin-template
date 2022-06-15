@@ -174,13 +174,13 @@
                                 <li><a href="exception-visit.html">Exception Visit</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="mm-active">
                             <a class="has-arrow material-ripple" href="#">
                                 <i class="typcn typcn-point-of-interest-outline"></i>Product Management
                             </a>
                             <ul class="nav-second-level">
                                 <li><a href="product-category.html">Product Category</a></li>
-                                <li><a href="add-pos-item.html">Add Pos Item</a></li>
+                                <li class="mm-active"><a href="add-pos-item.html">Add Pos Item</a></li>
                                 <li>
                                     <a class="has-arrow" href="#" aria-expanded="false">Product</a>
                                     <ul class="nav-third-level">
@@ -192,14 +192,14 @@
                                 <li><a href="add good-to-have-sku.html">Add Good to Have SKU</a></li>
                             </ul>
                         </li>
-                        <li class="mm-active">
+                        <li>
                             <a class="has-arrow material-ripple" href="#">
                                 <i class="typcn typcn-shopping-cart"></i> Inventory
                             </a>
                             <ul class="nav-second-level">
                                 <li><a href="product-inventory.html">Product Inventory</a></li>
                                 <li><a href="product-checkouts.html">Product Checkouts</a></li>
-                                <li class="mm-active"><a href="product-checkins.html">Product Checkins</a></li>
+                                <li><a href="product-checkins.html">Product Checkins</a></li>
                                 <li><a href="product-batches.html">Product Batches</a></li>
                                 <li><a href="return-replace.html">Return Replace</a></li>
                             </ul>
@@ -523,122 +523,37 @@
                 <!--/.navbar-->
                 <div class="body-content">
                     <div class="row">
-                        <div class="col-12 pe-3">
-                            <div class="accordion accordion-flush px-0 mb-2" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header d-flex justify-content-end mb-3" id="flush-headingOne">
-                                        <button type="button" class="fs-17 filter-bt" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><img  class="me-2 h-24" src="assets/dist/img/icons8-filter-30.png" alt="">Filter</button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse bg-white px-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="row">
-                                            <div class="col-12 col-md-6 col-xl-4 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Users</label>
-                                                <div class="col-12">
-                                                    <select class="form-control placeholder-single">                                       
-                                                        <optgroup label="Central Time Zone">
-                                                            <option value="AL">Alabama</option>
-                                                            <option value="AR">Arkansas</option>
-                                                            <option value="IL">Illinois</option>
-                                                            <option value="IA">Iowa</option>
-                                                            <option value="KS">Kansas</option>
-                                                            <option value="KY">Kentucky</option>
-                                                            <option value="LA">Louisiana</option>
-                                                            <option value="MN">Minnesota</option>
-                                                        </optgroup>                                              
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-xl-4 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Date</label>
-                                                <div class="col-12">
-                                                    <select class="form-control placeholder-single">                                       
-                                                        <optgroup label="Central Time Zone">
-                                                            <option value="AL">Alabama</option>
-                                                            <option value="AR">Arkansas</option>
-                                                            <option value="IL">Illinois</option>
-                                                            <option value="IA">Iowa</option>
-                                                            <option value="KS">Kansas</option>
-                                                            <option value="KY">Kentucky</option>
-                                                            <option value="LA">Louisiana</option>
-                                                            <option value="MN">Minnesota</option>
-                                                        </optgroup>                                              
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-xl-4 mb-3">
-                                                <label class="col-form-label text-end fw-semi-bold">Custom Search</label>
-                                                <div class="col-12">
-                                                    <select class="form-control placeholder-single">                                       
-                                                        <optgroup label="Central Time Zone">
-                                                            <option value="AL">Alabama</option>
-                                                            <option value="AR">Arkansas</option>
-                                                            <option value="IL">Illinois</option>
-                                                            <option value="IA">Iowa</option>
-                                                            <option value="KS">Kansas</option>
-                                                            <option value="KY">Kentucky</option>
-                                                            <option value="LA">Louisiana</option>
-                                                            <option value="MN">Minnesota</option>
-                                                        </optgroup>                                              
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 mb-3 align-items-end d-flex">
-                                                <button class="btn btn-success me-2">Go</button>
-                                                <button class="btn btn-danger">Reset</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 class="fs-17 fw-semi-bold mb-0">Inventory Product Checkins</h6>
-                                        </div>
-                                        <div class="text-end">
-                                            <a href="new-product-checkin.html" class="btn btn-success me-2"><i class="typcn typcn-upload me-1"></i>New</a>
+                                            <h6 class="fs-17 fw-semi-bold mb-0">Pos Item List</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <table id="example" class="table table-striped table-bordered dt-responsive nowrap table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>SL No.</th>
-                                                <th>Fieldrep</th>
-                                                <th>Confirmed</th>
-                                                <th>Checkin By</th>
-                                                <th>Checkin Date</th>
-                                                <th>Action</th>
-                                                <th>checkin note</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>
-                                                    <a href="#" class="btn btn-outline-danger btn-sm">No Confirm</a>
-                                                </td>
-                                                <td>Edinburgh</td>
-                                                <td>Tiger Nixon</td>
-                                                <td>
-                                                    <a href="view-new-product-checkin.html" class="btn btn-info-soft btn-sm me-1" data-bs-toggle="tooltip" title="view"><i class="far fa-eye"></i></a>
-                                                    <a href="#" class="btn btn-danger-soft btn-sm me-1" data-bs-toggle="tooltip" title="Delete"><i class="far fa-trash-alt"></i></a>
-                                                </td>
-                                                <td>fff</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table id="example" class="table display table-bordered table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>SL No.</th>
+                                                    <th>POS item</th>
+                                                    <th>User</th>
+                                                    <th>Client</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <!--/.body content-->
 

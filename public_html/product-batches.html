@@ -584,7 +584,7 @@
                                             <h6 class="fs-17 fw-semi-bold mb-0">Inventory Batch</h6>
                                         </div>
                                         <div class="text-end">
-                                            <button class="btn btn-success">New</button>
+                                            <a href="new-product-batches.html" class="btn btn-success"><i class="typcn typcn-upload me-1"></i>New</a>
                                         </div>
                                     </div>
                                 </div>
@@ -594,10 +594,9 @@
                                             <thead>
                                                 <tr>
                                                     <th>SL No.</th>
-                                                    <th>Fieldrep</th>
-                                                    <th>Confirmed</th>
-                                                    <th>Checkin By</th>
-                                                    <th>Checkin Date</th>
+                                                    <th>Distributor</th>
+                                                    <th>Batch Description</th>
+                                                    <th>Batch Date</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -607,8 +606,9 @@
                                                     <td>System Architect</td>
                                                     <td>Edinburgh</td>
                                                     <td>Edinburgh</td>
-                                                    <td>Tiger Nixon</td>
-                                                    <td>System Architect</td>
+                                                    <td>
+                                                        <a href="view-new-product-checkin.html" class="btn btn-success-soft btn-sm me-1" data-bs-toggle="tooltip" title="view"><i class="fas fa-search"></i></a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

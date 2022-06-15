@@ -1,7 +1,7 @@
-(function ($) {
+(function($) {
     "use strict";
     var bdAdmin = {
-        initialize: function () {
+        initialize: function() {
             this.navbarClock();
             this.inputSearch();
             this.scrollBar();
@@ -14,57 +14,57 @@
             this.fullScreen();
             this.pageloader();
         },
-        navbarClock: function () {
+        navbarClock: function() {
             //nav clock
             if ($(".nav-clock")[0]) {
                 var a = new Date;
-                a.setDate(a.getDate()), setInterval(function () {
+                a.setDate(a.getDate()), setInterval(function() {
                     var a = (new Date).getSeconds();
                     $(".time-sec").html((a < 10 ? "0" : "") + a);
-                }, 1e3), setInterval(function () {
+                }, 1e3), setInterval(function() {
                     var a = (new Date).getMinutes();
                     $(".time-min").html((a < 10 ? "0" : "") + a);
-                }, 1e3), setInterval(function () {
+                }, 1e3), setInterval(function() {
                     var a = (new Date).getHours();
                     $(".time-hours").html((a < 10 ? "0" : "") + a);
                 }, 1e3);
             }
         },
-        inputSearch: function () {
+        inputSearch: function() {
             //input search focus action
-            $("body").on("focus", ".search__text", function () {
+            $("body").on("focus", ".search__text", function() {
                 $(this).closest(".search").addClass("search--focus");
-            }), $("body").on("blur", ".search__text", function () {
+            }), $("body").on("blur", ".search__text", function() {
                 $(this).val(""), $(this).closest(".search").removeClass("search--focus");
             });
         },
-        scrollBar: function () {
-            $('.sidebar-body').each(function () {
+        scrollBar: function() {
+            $('.sidebar-body').each(function() {
                 const ps = new PerfectScrollbar($(this)[0]);
             });
         },
-        dropdownScrollBar: function () {
-            $('.dropdown-menu-scroll').each(function () {
+        dropdownScrollBar: function() {
+            $('.dropdown-menu-scroll').each(function() {
                 const ps = new PerfectScrollbar($(this)[0]);
             });
         },
-        navbarToggler: function () {
+        navbarToggler: function() {
             //Navbar collapse hide
-            $('.navbar-collapse .navbar-toggler').on('click', function () {
+            $('.navbar-collapse .navbar-toggler').on('click', function() {
                 $('.navbar-collapse').collapse('hide');
             });
         },
-        sideBar: function () {
-            $('#sidebarCollapse').on('click', function () {
+        sideBar: function() {
+            $('#sidebarCollapse').on('click', function() {
                 $('.sidebar, .navbar').toggleClass('active');
             });
-            $('.overlay').on('click', function () {
+            $('.overlay').on('click', function() {
                 $('.sidebar').removeClass('active');
                 $('.overlay').removeClass('active');
                 $('.sidebar-icon-aside').removeClass('show');
                 $('.sidebar-icon .nav-link').removeClass('active');
             });
-            $('#sidebarCollapse').on('click', function (e) {
+            $('#sidebarCollapse').on('click', function(e) {
                 e.preventDefault();
                 if (window.matchMedia('(max-width: 767px)').matches) {
                     $('.overlay').addClass('active');
@@ -72,14 +72,14 @@
                     $('.overlay').removeClass('active');
                 }
             });
-            $('.sidebar .with-sub').on('click', function (e) {
+            $('.sidebar .with-sub').on('click', function(e) {
                 e.preventDefault();
                 $(this).parent().toggleClass('show');
                 $(this).parent().siblings().removeClass('show');
             });
 
             var minimizeSidebar = false,
-                    miniSidebar = 0;
+                miniSidebar = 0;
 
             function checkPosition(x) {
                 if (x.matches) { // If media query matches
@@ -90,7 +90,7 @@
                             miniSidebar = 1;
                             minibutton.addClass('toggled');
                         }
-                        minibutton.on('click', function () {
+                        minibutton.on('click', function() {
                             if (miniSidebar === 1) {
                                 $('.sidebar-mini').removeClass('sidebar-collapse');
                                 minibutton.removeClass('toggled');
@@ -104,11 +104,11 @@
                         });
                         minimizeSidebar = true;
                     }
-                    $('.sidebar').hover(function () {
+                    $('.sidebar').hover(function() {
                         if ($('.sidebar-mini').hasClass('sidebar-collapse')) {
                             $('.sidebar-mini').addClass('sidebar-collapse_hover');
                         }
-                    }, function () {
+                    }, function() {
                         if ($('.sidebar-mini').hasClass('sidebar-collapse')) {
                             $('.sidebar-mini').removeClass('sidebar-collapse_hover');
                         }
@@ -120,18 +120,18 @@
             checkPosition(x); // Call listener function at run time
             x.addListener(checkPosition); // Attach listener function on state changes
         },
-        sidebarCompact: function () {
+        sidebarCompact: function() {
             if ($('.sidebar-icon .nav-link.active').length) {
                 var targ = $('.sidebar-icon .nav-link.active').attr('href');
                 $(targ).addClass('show');
                 $('.sidebar-icon-aside').addClass('show');
 
                 if (window.matchMedia('(min-width: 992px)').matches &&
-                        window.matchMedia('(max-width: 1199px)').matches) {
+                    window.matchMedia('(max-width: 1199px)').matches) {
                     $('.sidebar-icon .nav-link.active').removeClass('active');
                 }
             }
-            $('.sidebar-icon .nav-link').on('click', function (e) {
+            $('.sidebar-icon .nav-link').on('click', function(e) {
                 e.preventDefault();
 
                 $(this).addClass('active');
@@ -143,28 +143,28 @@
                 $(targ).addClass('show');
                 $(targ).siblings().removeClass('show');
             });
-            $('.sidebar-icon-toggle-menu').on('click', function (e) {
+            $('.sidebar-icon-toggle-menu').on('click', function(e) {
                 e.preventDefault();
 
                 $('.sidebar-icon .nav-link.active').removeClass('active');
                 $('.sidebar-icon-aside').removeClass('show');
             })
 
-            $('.compact .sidebar-toggle-icon').on('click', function () {
+            $('.compact .sidebar-toggle-icon').on('click', function() {
                 $('.content-wrapper').toggleClass('active');
             });
 
-            $('.sidebar-icon').each(function () {
+            $('.sidebar-icon').each(function() {
                 const ps = new PerfectScrollbar($(this)[0]);
             });
 
-            $('.sidebar-icon-body').each(function () {
+            $('.sidebar-icon-body').each(function() {
                 const ps = new PerfectScrollbar($(this)[0]);
             });
         },
-        materialRipple: function () {
+        materialRipple: function() {
             // Material Ripple effect
-            $(".material-ripple").on('click', function (event) {
+            $(".material-ripple").on('click', function(event) {
                 var surface = $(this);
 
                 // create .material-ink element if doesn't exist
@@ -182,7 +182,7 @@
                     // use surface's width or height whichever is larger for
                     // the diameter to make a circle which can cover the entire element
                     var diameter = Math.max(surface.outerWidth(), surface.outerHeight());
-                    ink.css({height: diameter, width: diameter});
+                    ink.css({ height: diameter, width: diameter });
                 }
 
                 // get click coordinates
@@ -203,25 +203,25 @@
                 }).addClass("animate");
             });
         },
-        toTop: function () {
+        toTop: function() {
             $('body').append('<div id="toTop" class="btn-top"><i class="typcn typcn-arrow-up fs-21"></i></div>');
-            $(window).scroll(function () {
+            $(window).scroll(function() {
                 if ($(this).scrollTop() !== 0) {
                     $('#toTop').fadeIn();
                 } else {
                     $('#toTop').fadeOut();
                 }
             });
-            $('#toTop').on('click', function () {
-                $("html, body").animate({scrollTop: 0}, 600);
+            $('#toTop').on('click', function() {
+                $("html, body").animate({ scrollTop: 0 }, 600);
                 return false;
             });
         },
-        fullScreen: function () {
+        fullScreen: function() {
             function toggleFullscreen(elem) {
                 elem = elem || document.documentElement;
                 if (!document.fullscreenElement && !document.mozFullScreenElement &&
-                        !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                    !document.webkitFullscreenElement && !document.msFullscreenElement) {
                     if (elem.requestFullscreen) {
                         elem.requestFullscreen();
                     } else if (elem.msRequestFullscreen) {
@@ -246,34 +246,31 @@
 
             var el = document.getElementById('btnFullscreen');
             if (el) {
-                el.addEventListener('click', function () {
+                el.addEventListener('click', function() {
                     toggleFullscreen();
                 });
-            }
-            ;
+            };
 
-            $('.full-screen_icon').click(function () {
+            $('.full-screen_icon').click(function() {
                 $(this).toggleClass('typcn-arrow-move-outline');
                 $(this).toggleClass('typcn-arrow-minimise-outline');
             });
 
         },
-        pageloader: function () {
-            setTimeout(function () {
+        pageloader: function() {
+            setTimeout(function() {
                 $('.page-loader-wrapper').fadeOut();
             }, 50);
         }
     };
     // Initialize
-    $(document).ready(function () {
+    $(document).ready(function() {
         "use strict";
         bdAdmin.initialize();
-        $('.metismenu').metisMenu();//Metismenu
+        $('.metismenu').metisMenu(); //Metismenu
     });
-    $(window).on("load", function () {
+    $(window).on("load", function() {
         bdAdmin.pageloader();
     });
 
 }(jQuery));
-
-
