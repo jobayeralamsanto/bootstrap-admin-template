@@ -76,6 +76,46 @@
     background: linear-gradient(to right, #D7DDE8, #757F9A);
 }
 
+.gradient-01 {
+    background: linear-gradient(to right, rgb(95 159 181), rgb(40 171 80 / 53%));
+}
+
+.gradient-02 {
+    background: linear-gradient(to right, #41875bd1, #4bc1b6);
+}
+
+.gradient-03 {
+    background: linear-gradient(to right, #699d93, #4ac259cc);
+}
+
+.gradient-04 {
+    background: linear-gradient(to right, #66817d, #A1FFCE);
+}
+
+.gradient-05 {
+    background: linear-gradient(to right, #485451, #7f5ebb);
+}
+
+.gradient-06 {
+    background: linear-gradient(to right, #1e362775, #5cc1ae, #30a54d);
+}
+
+.gradient-07 {
+    background: linear-gradient(to right, #62bdb9e3, #407c70e0, #33a751);
+}
+
+.gradient-08 {
+    background: linear-gradient(to right, #0f9b0f7a, #00000052);
+}
+
+.gradient-09 {
+    background: linear-gradient(to right, #2dcf6aba, #11998ecc);
+}
+
+.gradient-010 {
+    background: linear-gradient(to right, #12a747bf, #41817bd6);
+}
+
 .px-10 {
     padding-right: 10rem!important;
     padding-left: 10rem!important;
@@ -271,4 +311,45 @@ a[data-fancybox] img {
     opacity: 1;
     background-color: rgba(17, 6, 25, 0.85)!important;
     transition: all 0.2s ease-in-out;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(to right, #0095ff, #0e1e36);
+}
+
+.bg-info-gradient {
+    background: linear-gradient(60deg, #7426dac2, #003bc1d4);
+}
+
+.bg-success-gradient {
+    background: linear-gradient(60deg, #df58b5, #af5656);
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(to right, #243B55, #141E30);
+}
+
+.ms-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.brround {
+    border-radius: 50% !important;
+}
+
+.box-shadow-primary {
+    box-shadow: -3px 6px 13px 3px #6259ca4d;
+}
+
+.counter-icon {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 29px;
+}
+
+.ms-auto {
+    margin-left: auto!important;
 }
