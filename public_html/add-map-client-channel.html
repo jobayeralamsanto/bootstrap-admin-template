@@ -615,34 +615,24 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
+                                            <form id="test">
                                                 <div class="mb-2">
                                                     <label class="col-form-label text-end fw-semi-bold">Client *</label>
                                                     <div class="col-12">
-                                                        <select id="mySelect2First" class="form-control">                                                        
-                                                            <optgroup label="Central Time Zone">
-                                                                <option value="AL">Alabama</option>
-                                                                <option value="AR">Arkansas</option>
-                                                                <option value="IL">Illinois</option>
-                                                                <option value="IA">Iowa</option>
-                                                                <option value="KS">Kansas</option>
-                                                                <option value="KY">Kentucky</option>
-                                                            </optgroup>                                                          
+                                                        <select class="form-control mySelect2First">                                                                                                                
+                                                            <option>Alabama</option>
+                                                            <option>Arkansas</option>
+                                                            <option>Illinois</option>                                                      
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="mb-2">
                                                     <label class="col-form-label text-end fw-semi-bold">Channel Name *</label>
                                                     <div class="col-12">
-                                                        <select id="mySelect2Second" class="form-control">                                                        
-                                                            <optgroup label="Central Time Zone">
-                                                                <option value="AL">Alabama</option>
-                                                                <option value="AR">Arkansas</option>
-                                                                <option value="IL">Illinois</option>
-                                                                <option value="IA">Iowa</option>
-                                                                <option value="KS">Kansas</option>
-                                                                <option value="KY">Kentucky</option>                                                           
-                                                            </optgroup>                                                          
+                                                        <select class="form-control mySelect2First">                                                        
+                                                            <option>Alabama</option>
+                                                            <option>Arkansas</option>
+                                                            <option>Illinois</option>                                                                                                                 
                                                         </select>
                                                     </div>
                                                 </div>
@@ -686,25 +676,13 @@
     <script src="assets/dist/js/pages/forms-basic.active.js"></script>
     <script src="assets/dist/js/pages/highlight.active.js"></script>
     <script src="assets/dist/js/pages/modals.active.js"></script>
-
-
-
-    <!-- Third Party Scripts(used by this page)-->
     <script src="assets/dist/js/sidebar.js"></script>
-
     <script>
-        $('#mySelect2First').select2({
-            dropdownParent: $('#exampleModal'),
-            placeholder: "Select a state",
-            allowClear: true
-        });
-        $('#mySelect2Second').select2({
-            dropdownParent: $('#exampleModal'),
-            placeholder: "Select a state",
+        $('.mySelect2First').select2({
+            dropdownParent: $('#test'),
             allowClear: true
         });
     </script>
-
 </body>
 
 </html>
