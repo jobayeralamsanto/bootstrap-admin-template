@@ -615,6 +615,82 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="mb-3 row">
+                                                <label class="col-xl-3 col-form-label text-start fw-semi-bold">Spin Name *</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-control placeholder-single">                                       
+                                                        <optgroup label="Central Time Zone">
+                                                            <option value="AL">Alabama</option>
+                                                            <option value="AR">Arkansas</option>
+                                                            <option value="IL">Illinois</option>
+                                                            <option value="IA">Iowa</option>
+                                                            <option value="KS">Kansas</option>
+                                                            <option value="KY">Kentucky</option>
+                                                        </optgroup>                                              
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">Spin gift item</th>
+                                                            <th class="text-center">Stock QTY </th>
+                                                            <th class="text-center">Give QTY </th>
+                                                            <th class="text-center">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center">
+                                                                <select class="form-control placeholder-single">                                       
+                                                                    <optgroup label="Central Time Zone">
+                                                                        <option value="AL">Alabama</option>
+                                                                        <option value="AR">Arkansas</option>
+                                                                        <option value="IL">Illinois</option>
+                                                                        <option value="IA">Iowa</option>
+                                                                        <option value="KS">Kansas</option>
+                                                                        <option value="KY">Kentucky</option>
+                                                                    </optgroup>                                              
+                                                                </select>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <input type="number" name="stock_qty[]" class="form-control text-right stock_qty_1" id="stock_qty_1">
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <input type="number" name="give_qty[]" class="form-control text-right give_qty_1" id="give_qty_1">
+                                                            </td>
+
+                                                            <td class="text-right">
+                                                                <button style="text-align: right;" class="btn btn-danger" type="button" value="Delete" onclick="deleteRow(this)">Delete</button>
+                                                            </td>
+
+                                                        </tr>
+
+
+
+                                                    </tbody>
+
+                                                    <tfoot>
+
+                                                        <tr>
+                                                            <td colspan="3" align="right"></td>
+                                                            <td colspan="3">
+                                                                <button type="button" class="btn btn-sm btn-success pull-right" onclick="addInputField('addinvoiceItem');"> Add New</button>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tfoot>
+
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
